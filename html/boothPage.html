@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandyCalcy | Booth</title>
+    <link rel="stylesheet" href="../css/navstyle.css"><!--navigation css-->
+    <link rel="stylesheet" href="../css/booth.css"><!--boothcss-->
+    <link rel="stylesheet" href="../css/home.css"><!--boothcss-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--fontawesome-->
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"><!--font-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Monoton&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lateef&display=swap" rel="stylesheet"><!--font-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--nav js jquerry-->
+    
+    <script>     
+      $(function() {
+          
+        $(".toggle").on("click",function(){
+              
+          if($(".item").hasClass("active")){
+              $(".item").removeClass("active");
+          }
+          else{
+             $(".item").addClass("active");
+          }
+        })
+      })
+    </script>    
+</head>
+
+
+<body>
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="homepage.html" ><span class="fa fa-code"></span> candyCalcy</a></li>
+          <li class="item "><a class="activepage" href="boothPage.html">Booth</a></li>
+          <li class="item"><a href="divisionPage.html" >Division</a></li>
+          <li class="item"><a href="multiplicationPage.html" >Multiplication</a></li>
+          <li class="item btn"><a href="homepage.html" >Home</a></li>
+          <li class="item btn secondary"><a href="aboutpage.html" >About us</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+        <h1>Booth's Algorithm</h1>
+        <div class="container flex">
+          <div class="left flex">
+          <div class="input-panel flex">
+              <h2>Enter multiplicand and Multiplier</h2>
+              <form action="#" class="data">
+                <label for="Q"><b>Multiplicand:</b></label>
+                <input type="number" id="Q" name="Q"><br><br>
+                <label for="M"><b>Multiplier:</b></label>
+                <input type="number" id="M" name="M"><br><br>
+                <button class="inpbtn" onclick="main(document.getElementById('Q').value,document.getElementById('M').value)">submit</button>
+                <button class="inpbtn" type="reset" value="Reset">reset</button>
+              </form>
+          </div><!--input-panel-->
+          <img src="../img/booth.jpg" alt="booth.png" class="flowchart">
+        </div><!--left closing-->
+        </section>
+        <div class="right">
+          <div class="output-panel"> 
+            <ul id="mylist"><!--for displaying the values..-->
+
+            </ul>  
+            <br>        
+            <table id="mytable">
+              <tr> <th>COUNT</th> <th>A</th> <th>Q</th> <th>Q-1</th> <th>STEPS</th> </tr>
+            </table>
+          </div>
+        </section>
+        </div>
+      </div>
+      <script src="../js/booth_script.js"></script>
+</body>
+</html>
+
+
+

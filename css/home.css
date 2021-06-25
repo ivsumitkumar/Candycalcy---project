@@ -1,0 +1,65 @@
+
+.grid1 .item1{ grid-area: header;}
+.grid1 .item2{ grid-area: text;}
+.grid1 .item3{ grid-area:gif}
+.grid1{
+    height:89vh;
+    display:grid;
+    grid-template-areas:
+        'header header header header header header'
+        'text text text gif gif gif'
+        'text text text gif gif gif';
+        grid-gap: 0px;
+        background-color:#c3d3e0;
+        padding: 10px;
+    }
+.grid1 > div{
+    background-color: rgba(175, 124, 124, 1);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+.grid1 .item2{
+    text-align: center;
+    justify-content: center;
+    font-family: 'DM Serif Display',serif;
+    padding:50px 0 0 0;
+    font-weight: bolder;
+}
+.grid2 .item1{ grid-area: welcome;}
+.grid2 .item2{ grid-area: para;}
+.grid2{
+    height:100vh;
+    display:grid;
+    grid-template-areas:
+        'welcome'
+        'para'
+        'para'
+        'para';
+    padding:10px;
+}
+.grid2 >div{
+    text-align: center;
+    padding: 20px 0;
+}
+.grid2 .item1{    
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+}
+.grid2 .item2{
+    font-family: 'Lateef', cursive;
+    font-size:40px;
+    padding:50px 30px;
+    font-weight: bold;
+}    
+nav li a .fa , nav li a .fa-code{
+    font-weight: bolder ;
+    width:20px; height: 20px; font-size:20px; color:rgb(255, 255, 255)
+} 
+nav li a .fa:hover , nav li a .fa-code:hover{
+        color:rgba(175, 124, 124, 1);;
+}
+.item3 img{
+    width:70%;
+    height:70%;
+}
