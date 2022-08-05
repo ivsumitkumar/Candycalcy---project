@@ -3,7 +3,7 @@
 .grid1 .item2{ grid-area: text;}
 .grid1 .item3{ grid-area:gif}
 .grid1{
-    height:89vh;
+    height:70vh;
     display:grid;
     grid-template-areas:
         'header header header header header header'
